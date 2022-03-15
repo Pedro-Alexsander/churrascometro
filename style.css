@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    align-items: center;
+}
+.churrascometro{
+    max-width: 300px;
+    width: 100%;
+    background-color: lightblue;
+    display: grid;
+    justify-content: center;
+}
+.inputs input{
+    display: block;
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 85%;
+}
