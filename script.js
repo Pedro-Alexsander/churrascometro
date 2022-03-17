@@ -11,21 +11,24 @@ function calc(){
     let tempo = parseFloat(document.getElementById("duracao").value)
     let carne = (adultos * 0.4) + (criancas * 0.4)
     let cerveja = adultos * 1.2
-    let refrigente = (adultos* 1)+(criancas * 1)
+    let refri = (adultos* 1)+(criancas * 1)
     let mensagem = document.getElementById("resultado").innerHTML = " "
 
     if(tempo <6){
     mensagem = document.getElementById("resultado").innerHTML=
-        `<p>${carne}kg de carne</p><br> 
-        ${cerveja} litros de cerveja`
+        `${carne}kg de carne<br> 
+        ${cerveja} litros de cerveja<br>
+        ${refri} litros de refrigerante`
         
 
-    }if(tempo>6){
+    }if(tempo>=6){
         carne = (adultos * 0.65) + (criancas * 0.65)
         cerveja = adultos * 2
-        refrigente = (adultos* 1.5)+(criancas * 1.5)
+        refri = (adultos* 1.5)+(criancas * 1.5)
 
         mensagem = document.getElementById("resultado").innerHTML=
-        " "
+        `${carne}kg de carne<br> 
+        ${cerveja} litros de cerveja<br>
+        ${refri} litros de refrigerante`
     }
     }
