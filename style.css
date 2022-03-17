@@ -35,3 +35,9 @@ body{
     transform:scale(1.1);
     transition: all 400ms;
 }
+#resultado{
+    margin-top: -25px;
+}
+p{
+    margin-bottom: -10px;
+}
