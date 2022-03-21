@@ -22,9 +22,9 @@ function calc(){
         
 
     }if(tempo>=6){
-        carne = (adultos * 0.65) + (criancas * 0.65)
-        cerveja = adultos * 2
-        refri = (adultos* 1.5)+(criancas * 1.5)
+        carne = ((adultos * 0.65) + (criancas * 0.65)).toFixed(2)
+        cerveja = (adultos * 2).toFixed(2)
+        refri = ((adultos* 1.5)+(criancas * 1.5)).toFixed(2)
 
         mensagem = document.getElementById("resultado").innerHTML=
         `${carne}kg de carne<br> 
