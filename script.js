@@ -9,9 +9,9 @@ function calc(){
     let adultos = parseInt(document.getElementById("adultos").value)
     let criancas = (parseInt(document.getElementById("criancas").value)/2)
     let tempo = parseFloat(document.getElementById("duracao").value)
-    let carne = (adultos * 0.4) + (criancas * 0.4)
-    let cerveja = adultos * 1.2
-    let refri = (adultos* 1)+(criancas * 1)
+    let carne = ((adultos * 0.4) + (criancas * 0.4)).toFixed(2)
+    let cerveja = (adultos * 1.2).toFixed(2)
+    let refri = ((adultos* 1)+(criancas * 1)).toFixed(2)
     let mensagem = document.getElementById("resultado").innerHTML = " "
 
     if(tempo <6){
